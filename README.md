@@ -1,4 +1,4 @@
-# ⚡ German Energy Dashboard
+#  German Energy Dashboard
 
 A full-stack data science application for real-time monitoring, analysis, and forecasting of German electricity consumption. Built with a FastAPI backend, PostgreSQL database, and a multi-page Streamlit frontend.
 
@@ -20,11 +20,11 @@ A full-stack data science application for real-time monitoring, analysis, and fo
 
 ## Features
 
-- **Live Monitoring** — real-time electricity load tracking with alert threshold controls and drill-down focus window
-- **Energy Mix** — stacked view of renewables (wind + solar) vs conventional generation with renewable share over time
-- **Compare Periods** — normalized shape comparison of two custom time windows on a relative time axis
-- **Load Forecast** — up to 72-hour ahead electricity demand forecast using a Random Forest model with recursive prediction
-- **Automatic Data Ingestion** — background scheduler keeps the database updated without manual intervention
+- **Live Monitoring** - real-time electricity load tracking with alert threshold controls and drill-down focus window
+- **Energy Mix** - stacked view of renewables (wind + solar) vs conventional generation with renewable share over time
+- **Compare Periods** - normalized shape comparison of two custom time windows on a relative time axis
+- **Load Forecast** - up to 72-hour ahead electricity demand forecast using a Random Forest model with recursive prediction
+- **Automatic Data Ingestion** - background scheduler keeps the database updated without manual intervention
 
 ---
 
@@ -111,7 +111,7 @@ The load forecast uses a **Random Forest Regressor** trained on time-series feat
 - Rolling mean
 - Weather variables (temperature, wind speed)
 
-Predictions use **recursive forecasting** — each predicted value is fed back as input for the next step — supporting forecast horizons of 6 to 72 hours.
+Predictions use **recursive forecasting** - each predicted value is fed back as input for the next step, supporting forecast horizons of 6 to 72 hours.
 
 ---
 
